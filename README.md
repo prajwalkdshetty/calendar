@@ -1,4 +1,4 @@
-# Calendar
+# Events Calendar
 
 This Component can be used for displaying events in a month of a calendar. 
 User can navigate to previous or next month to view the events .
