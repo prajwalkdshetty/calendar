@@ -24,6 +24,8 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/styles/reset.css",
+              "src/assets/styles/normalize.css",
               "src/styles.css"
             ],
             "scripts": []

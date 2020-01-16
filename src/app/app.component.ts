@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { events } from '../assets/data';
+import { calendarConfig } from '../assets/custom-calendar-config';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calendar';
+  config = calendarConfig;
+  events = events;
 }

@@ -1,0 +1,24 @@
+<div class="calendar-container">
+  <h3>{{calendar.data.title}}</h3>
+  <div class="button-container">
+    <button class="btn" (click)="navigate(-1)">Prev</button>
+    <button class="btn" (click)="navigate(1)">Next</button>
+  </div>
+  <div class="calendar-content">
+
+    <div class="calendar">
+      <ul class="month" [ngStyle]="{'height': calendar.data.height+'px'}">
+        <li *ngFor="let data of calendar.data?.daysData" class="days" [ngStyle]="{'min-width': calendar.calendarConfig.width+'px'}">
+          <span class="day">{{data.day}}</span>
+          <span class="date">{{data.date}}</span>
+        </li>
+      </ul>
+      <div *ngFor="let data of calendar.data.eventsData" class="events" [title]="data.name + data.dateText"
+        [ngStyle]="{'left': data.left+'px','top': data.top+'px', 'width': data.width+'px', 'height': data.height+'px', 'background-color': data.colorCode }">
+        <p class="event-name">{{ data.name }}</p>
+      </div>
+    </div>
+  </div>
+  
+  <p *ngIf="calendar.data.noEvents" class="no-events">{{calendar.calendarConfig.noEventsMsg}}</p>
+</div>
