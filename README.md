@@ -1,5 +1,12 @@
 # Calendar
 
+This Component can be used for displaying events in a month of a calendar. 
+User can navigate to previous or next month to view the events .
+
+## Inputs Required for the component:
+1) Events Array
+2) Calendar Config (optional - if not passed will take it from default config)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
 ## Development server
